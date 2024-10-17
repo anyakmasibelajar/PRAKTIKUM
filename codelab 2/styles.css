@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    background-color: white;
+    padding: 50px; /* Mengurangi padding */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Mengurangi lebar maksimal kontainer */
+    box-sizing: border-box;
+}
+
+/* Flexbox untuk mengatur input ke kiri */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Agar elemen input di-align ke kiri */
+    width: 100%; /* Full width untuk input */
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px; /* Menambahkan sedikit margin antara label dan input */
+}
+
+input {
+    width: 100%;
+    padding: 8px; /* Sedikit mengurangi padding pada input */
+    margin: 8px 0; /* Mengurangi jarak antar elemen */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left; /* Menambahkan agar teks dalam input rata kiri */
+}
+
+button {
+    padding: 8px 16px; /* Mengurangi padding pada tombol */
+    margin: 8px 5px; /* Mengurangi jarak antara tombol */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Sedikit mengecilkan font pada tombol */
+}
+
+.btn-jumlah {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-reset {
+    background-color: #ccc;
+}
+
+.result {
+    font-size: 18px; /* Sedikit mengecilkan ukuran teks hasil */
+    margin-top: 15px; /* Mengurangi margin atas pada hasil */
+    font-weight: bold;
+}

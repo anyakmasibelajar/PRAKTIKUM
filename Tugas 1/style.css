@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FCE4EC, #ffa8c6); /* Soft blush pink gradient */
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #ffffff); /* Muted pink gradient */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+.display {
+    height: 70px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 32px;
+    padding: 15px;
+    color: #333;
+    border-radius: 15px;
+    background: #ffe9e9;
+    /*box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.1), inset -3px -3px 10px rgba(255, 255, 255, 0.7);*/
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #ffdddd; /* Soft pink */
+    /*box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1), -3px -3px 10px rgba(255, 255, 255, 0.5);
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;*/
+}
+
+.buttons button:hover {
+    background-color: #ff0000; /* Muted red */
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.buttons .operator {
+    background-color: #ff7987; /* Soft pink for operators */
+    color: #ffffff; /* Elegant red */
+}
+
+.buttons .operator:hover {
+    background-color: #000000; /* Sophisticated darker red */
+    color: #FFF;
+}
+
+.buttons .equals {
+    grid-column: span 3;
+    background-color: #ff0000; /* Elegant red */
+    color: #FFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttons .equals:hover {
+    background-color: #000000; /* Muted dark red */
+    color: #FFF;
+}
+
+@media (max-width: 500px) {
+    .display {
+        font-size: 24px;
+        height: 60px;
+    }
+
+    .buttons button {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .display {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .buttons button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

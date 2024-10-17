@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8e3e7; /* Warna latar belakang semi pink */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px; /* Lebar maksimum untuk layar yang lebih besar */
+    margin: auto; /* Menempatkan container di tengah */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Ukuran font untuk judul */
+    color: #000000; /* Warna teks heading semi pink gelap */
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+button,
+textarea {
+    border-radius: 5px;
+    border: 1px solid #e9a2b0; /* Warna pink muda untuk border */
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%; /* Membuat input full width */
+}
+
+button {
+    background-color: #ff6b81; /* Warna tombol semi merah/pink */
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.7s ease;
+}
+
+button:hover {
+    background-color: #e65a6e; /* Warna saat hover tombol */
+    transform: scale(1.1);
+}
+
+.containerList {
+    overflow-y: scroll;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    max-height: 400px;
+}
+
+li {
+    background: #ffe3e9; /* Warna latar belakang item list pink sangat muda */
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li input {
+    border: none;
+    background: none;
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 5px;
+}
+
+li input:focus {
+    outline: none;
+    border-bottom: 1px solid #ff6b81; /* Border bawah saat fokus */
+}
+
+li textarea {
+    border: none;
+    background: none;
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 5px;
+    resize: none; /* Mencegah resize */
+    height: auto; /* Menyesuaikan tinggi dengan konten */
+}
+
+li textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #ff6b81; /* Border bawah saat fokus */
+}
+
+li button {
+    background-color: #ff4d6d; /* Warna tombol delete merah/pink */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+li button:hover {
+    background-color: #e63e57; /* Warna saat hover tombol delete */
+}
+
+.editBtn {
+    background-color: #ffd54f; /* Warna tombol edit kuning pastel */
+    margin-right: 10px;
+}
+
+.editBtn:hover {
+    background-color: #ffca28; /* Warna saat hover tombol edit */
+}
+
+@media (min-width: 600px) {
+    li {
+        flex-direction: row; /* Menyusun elemen secara horisontal di layar besar */
+        align-items: center;
+    }
+
+    li textarea {
+        height: 40px; /* Tinggi tetap di layar besar */
+    }
+
+    button {
+        width: auto; /* Membuat tombol otomatis menyesuaikan ukuran */
+        margin-left: 10px; /* Menambahkan jarak antar tombol */
+    }
+}
